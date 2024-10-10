@@ -8,7 +8,7 @@ from time import sleep
 # pyautogui.click -> clicar em algum lugar da tela
 # pyautogui.hotkey -> combinação de teclas
 
-pyautogui.PAUSE = 0.5 # Definição de tempo entre códigos
+pyautogui.PAUSE = 0.3 # Definição de tempo entre códigos
 
 # abrir o navegador (chrome)
 pyautogui.press("win")
@@ -26,6 +26,7 @@ sleep(2)
 # Passo 2: Fazer login
 # Selecionar o campo de email
 pyautogui.click(x=1100,y=408)
+sleep(0.5)
 # Escrever o seu email
 pyautogui.write("pythonimpressionador@gmail.com")
 pyautogui.press("tab") # selecionar próximo campo
